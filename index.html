@@ -1,0 +1,989 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Prof. Sayon — Medium &amp; Groot Ziener · Den haag</title>
+<meta name="description" content="Prof. Sayon is een werkend medium en helderziende in Den haag. Persoonlijke consulten, helderziendheid, occulte werken. Vertrouwelijk en zonder religieuze aanpak."/>
+<style>
+  /* ── self-hosted fonts ── */
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 500;font-display:swap;src:url('./fonts/cg-italic-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:300 500;font-display:swap;src:url('./fonts/cg-italic-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 600;font-display:swap;src:url('./fonts/cg-normal-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:300 600;font-display:swap;src:url('./fonts/cg-normal-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:300 600;font-display:swap;src:url('./fonts/inter-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'Inter';font-style:normal;font-weight:300 600;font-display:swap;src:url('./fonts/inter-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url('./fonts/jbm-latin-ext.woff2') format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+  @font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 500;font-display:swap;src:url('./fonts/jbm-latin.woff2') format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+
+  :root{
+    --bg:         oklch(0.12 0.03 280);
+    --bg-2:       oklch(0.08 0.02 280);
+    --surface:    oklch(0.18 0.035 280);
+    --surface-2:  oklch(0.22 0.04 280);
+    --line:       oklch(0.35 0.04 280 / 0.45);
+    --ink:        oklch(0.96 0.01 85);
+    --ink-dim:    oklch(0.78 0.015 85 / 0.72);
+    --ink-faint:  oklch(0.68 0.015 85 / 0.55);
+    --gold:       oklch(0.82 0.12 85);
+    --gold-deep:  oklch(0.68 0.13 75);
+    --plum:       oklch(0.55 0.09 340);
+    --serif: "Cormorant Garamond", "EB Garamond", Garamond, serif;
+    --sans:  "Inter", system-ui, sans-serif;
+    --mono:  "JetBrains Mono", ui-monospace, monospace;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{background:var(--bg-2);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  body{overflow-x:hidden}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+  ::selection{background:var(--gold);color:var(--bg-2)}
+
+  /* ── language toggle ── */
+  body.lang-nl .en{display:none !important}
+  body.lang-en .nl{display:none !important}
+
+  /* ── layout ── */
+  .wrap{width:min(1200px,100% - 48px);margin-inline:auto}
+  .rule{height:1px;background:var(--line);border:0}
+  .kicker{font-family:var(--sans);font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold);font-weight:500}
+  .num{font-family:var(--mono);font-size:11px;letter-spacing:0.15em;color:var(--ink-faint)}
+  .h-display{font-family:var(--serif);font-weight:400;line-height:0.98;letter-spacing:-0.01em}
+  .h-display em{font-style:italic;color:var(--gold);font-weight:300}
+
+  /* ── nav ── */
+  nav.top{
+    position:fixed;inset:0 0 auto 0;z-index:40;
+    backdrop-filter:blur(14px);
+    background:linear-gradient(to bottom,oklch(0.08 0.02 280 / 0.85),oklch(0.08 0.02 280 / 0.55));
+    border-bottom:1px solid var(--line);
+  }
+  nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+  .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:22px;letter-spacing:0.02em}
+  .brand .mark{
+    width:28px;height:28px;border-radius:50%;flex-shrink:0;
+    background:
+      radial-gradient(circle at 65% 40%,var(--gold) 0 35%,transparent 36%),
+      radial-gradient(circle at 35% 50%,var(--bg-2) 0 45%,transparent 46%),
+      linear-gradient(135deg,var(--gold-deep),var(--plum));
+    box-shadow:0 0 0 1px var(--gold-deep) inset,0 0 24px oklch(0.82 0.12 85 / 0.25);
+  }
+  nav.top ul{display:flex;gap:28px;list-style:none}
+  nav.top a{font-size:13px;color:var(--ink-dim);letter-spacing:0.04em;transition:.2s}
+  nav.top a:hover{color:var(--ink)}
+  .nav-right{display:flex;align-items:center;gap:16px}
+  .lang-toggle{display:flex;align-items:center}
+  .lang-toggle button{
+    padding:5px 9px;border:1px solid var(--line);color:var(--ink-faint);
+    font-family:var(--mono);font-size:10px;letter-spacing:0.12em;text-transform:uppercase;
+    cursor:pointer;background:transparent;transition:.2s;
+  }
+  .lang-toggle button:first-child{border-right:0}
+  .lang-toggle button.active{background:var(--gold);color:var(--bg-2);border-color:var(--gold)}
+  .lang-toggle button:not(.active):hover{border-color:var(--gold);color:var(--gold)}
+  .nav-wapp{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:12px;padding:9px 14px;border:1px solid oklch(0.60 0.12 160);
+    color:oklch(0.80 0.12 160);border-radius:999px;letter-spacing:0.06em;
+    text-transform:uppercase;transition:.25s;
+  }
+  .nav-wapp:hover{background:oklch(0.60 0.12 160);color:var(--bg-2)}
+  .nav-wapp svg{width:13px;height:13px;fill:currentColor;flex-shrink:0}
+
+  /* ── hero ── */
+  .hero{
+    position:relative;min-height:100vh;padding:128px 0 80px;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 0%,oklch(0.22 0.06 290 / 0.6),transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 90%,oklch(0.30 0.08 340 / 0.35),transparent 60%),
+      var(--bg-2);
+    overflow:hidden;isolation:isolate;
+  }
+  canvas.stars{position:absolute;inset:0;z-index:0;opacity:0.9}
+  .moon{
+    position:absolute;z-index:1;right:-120px;top:80px;width:540px;height:540px;border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 40%,oklch(0.98 0.015 85 / 0.12),transparent 55%),
+      radial-gradient(circle at 60% 55%,oklch(0.82 0.12 85 / 0.18) 0 60%,transparent 61%);
+    filter:blur(1px);mix-blend-mode:screen;pointer-events:none;
+  }
+  .moon::after{
+    content:"";position:absolute;inset:0;border-radius:50%;
+    border:1px solid oklch(0.82 0.12 85 / 0.25);
+    box-shadow:0 0 120px oklch(0.82 0.12 85 / 0.12) inset;
+  }
+  .hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;min-height:calc(100vh - 208px)}
+  .hero h1{font-size:clamp(56px,9vw,128px)}
+  .hero .lede{margin-top:28px;max-width:46ch;font-size:17px;line-height:1.6;color:var(--ink-dim)}
+  .hero .eyebrow{display:flex;align-items:center;gap:14px;margin-bottom:28px}
+  .hero .eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+  .hero .actions{margin-top:44px;display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+  .btn{padding:16px 28px;border-radius:999px;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;display:inline-flex;align-items:center;gap:10px;transition:.25s}
+  .btn-primary{background:var(--gold);color:var(--bg-2);font-weight:500}
+  .btn-primary:hover{background:oklch(0.88 0.13 85);transform:translateY(-1px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .btn-wapp{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:16px 28px;border-radius:999px;font-size:13px;letter-spacing:0.12em;text-transform:uppercase;
+    background:oklch(0.45 0.10 160);color:var(--ink);font-weight:500;transition:.25s;
+    border:1px solid oklch(0.60 0.12 160);
+  }
+  .btn-wapp:hover{background:oklch(0.55 0.12 160);transform:translateY(-1px)}
+  .btn-wapp svg{width:16px;height:16px;fill:currentColor;flex-shrink:0}
+
+  /* info card */
+  .info-card{
+    position:relative;max-width:380px;margin-left:auto;
+    border:1px solid var(--line);padding:32px;
+    background:linear-gradient(180deg,oklch(0.16 0.035 280),oklch(0.10 0.02 280));
+    box-shadow:0 40px 80px -40px oklch(0.05 0.02 280),0 0 0 1px oklch(0.82 0.12 85 / 0.08);
+    display:flex;flex-direction:column;gap:28px;
+  }
+  .info-card .corner{position:absolute;width:12px;height:12px;border:1px solid var(--gold)}
+  .info-card .c1{top:-1px;left:-1px;border-right:0;border-bottom:0}
+  .info-card .c2{top:-1px;right:-1px;border-left:0;border-bottom:0}
+  .info-card .c3{bottom:-1px;left:-1px;border-right:0;border-top:0}
+  .info-card .c4{bottom:-1px;right:-1px;border-left:0;border-top:0}
+  .info-status{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-dim)}
+  .status-dot{width:7px;height:7px;border-radius:50%;background:oklch(0.70 0.15 150);flex-shrink:0;box-shadow:0 0 8px oklch(0.70 0.15 150/0.6);animation:pulse-dot 2.5s ease-in-out infinite}
+  @keyframes pulse-dot{0%,100%{box-shadow:0 0 6px oklch(0.70 0.15 150/0.5)}50%{box-shadow:0 0 16px oklch(0.70 0.15 150/0.9)}}
+  .info-rows{display:flex;flex-direction:column;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .info-row{display:flex;justify-content:space-between;align-items:baseline;padding:14px 0;border-bottom:1px solid var(--line)}
+  .info-row:last-child{border-bottom:0}
+  .il{font-family:var(--mono);font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--ink-faint)}
+  .iv{font-family:var(--serif);font-size:17px;color:var(--ink);text-align:right}
+  .iv-gold{font-family:var(--serif);font-size:22px;color:var(--gold);font-style:italic;text-align:right}
+  .info-cta{
+    display:flex;align-items:center;justify-content:center;gap:10px;
+    padding:15px 20px;border-radius:999px;
+    background:oklch(0.45 0.10 160);color:var(--ink);
+    border:1px solid oklch(0.60 0.12 160);
+    font-size:12px;letter-spacing:0.1em;text-transform:uppercase;font-weight:500;
+    transition:.25s;text-decoration:none;
+  }
+  .info-cta:hover{background:oklch(0.55 0.12 160);transform:translateY(-1px)}
+  .info-cta svg{width:14px;height:14px;fill:currentColor;flex-shrink:0}
+  .info-note{text-align:center;font-family:var(--mono);font-size:10px;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-faint);line-height:1.7}
+
+  /* marquee */
+  .strip{border-block:1px solid var(--line);padding:22px 0;overflow:hidden;background:var(--bg-2);position:relative;z-index:3}
+  .strip-track{display:flex;gap:56px;white-space:nowrap;animation:marquee 40s linear infinite;font-family:var(--serif);font-size:22px;color:var(--ink-dim);font-style:italic}
+  .strip-track span.sep{color:var(--gold);font-style:normal}
+  @keyframes marquee{to{transform:translateX(-50%)}}
+
+  /* section base */
+  section{position:relative;padding:140px 0;background:var(--bg-2)}
+  .sec-head{display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:baseline;margin-bottom:72px}
+  .sec-head h2{font-size:clamp(40px,5.5vw,72px)}
+  .sec-head .meta{display:flex;flex-direction:column;gap:14px}
+
+  /* about */
+  .about{background:var(--bg-2)}
+  .about-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:80px;align-items:start}
+  .about p{font-family:var(--serif);font-size:24px;line-height:1.45;color:var(--ink);font-weight:300}
+  .about p+p{margin-top:24px}
+  .about .stats{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+  .stat .num-big{font-family:var(--serif);font-size:56px;color:var(--gold);font-weight:300;line-height:1}
+  .stat .lbl{margin-top:8px;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-dim)}
+  .about .aside{
+    position:sticky;top:100px;padding:40px;border:1px solid var(--line);
+    background:linear-gradient(180deg,oklch(0.16 0.035 280),oklch(0.10 0.02 280));
+  }
+  .about .aside h4{font-family:var(--serif);font-size:28px;font-weight:400;margin-bottom:24px}
+  .about .aside ul{list-style:none;display:flex;flex-direction:column;gap:14px}
+  .about .aside li{display:flex;align-items:center;gap:14px;font-size:14px;color:var(--ink-dim)}
+  .about .aside li::before{content:"";width:4px;height:4px;border-radius:50%;background:var(--gold);flex:0 0 auto}
+
+  /* services */
+  .services{background:var(--bg)}
+  .svc-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}
+  .svc{
+    display:grid;grid-template-columns:80px 1.2fr 2fr 1fr 60px;gap:32px;align-items:center;
+    padding:36px 0;border-bottom:1px solid var(--line);cursor:pointer;transition:.3s;
+    text-decoration:none;color:inherit;
+  }
+  .svc:hover{padding-left:16px;background:linear-gradient(90deg,oklch(0.82 0.12 85 / 0.04),transparent 60%)}
+  .svc .idx{font-family:var(--mono);color:var(--gold);font-size:13px}
+  .svc .t{font-family:var(--serif);font-size:32px;font-weight:400;letter-spacing:-0.01em}
+  .svc .d{color:var(--ink-dim);font-size:14px;line-height:1.6;max-width:52ch}
+  .svc .p{font-family:var(--serif);font-size:24px;color:var(--ink);font-style:italic}
+  .svc .p span{font-size:12px;font-family:var(--sans);color:var(--ink-faint);font-style:normal;letter-spacing:0.1em;text-transform:uppercase;margin-right:6px}
+  .svc .arr{
+    width:40px;height:40px;border-radius:50%;border:1px solid var(--line);
+    display:flex;align-items:center;justify-content:center;color:var(--ink-dim);transition:.3s;justify-self:end;
+  }
+  .svc:hover .arr{border-color:var(--gold);color:var(--gold);transform:rotate(-45deg)}
+
+  /* how it works */
+  .how{background:var(--bg-2)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .step{padding:40px 32px 40px 0;border-right:1px solid var(--line);position:relative}
+  .step:last-child{border-right:0;padding-right:0}
+  .step .s-num{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:42px;font-weight:300;margin-bottom:20px}
+  .step h4{font-family:var(--serif);font-size:24px;font-weight:400;margin-bottom:12px}
+  .step p{font-size:14px;line-height:1.6;color:var(--ink-dim)}
+
+  /* testimonials */
+  .quotes{background:var(--bg)}
+  .q-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border-block:1px solid var(--line)}
+  .q{background:var(--bg);padding:48px;display:flex;flex-direction:column;justify-content:space-between;min-height:320px;transition:.3s}
+  .q:hover{background:oklch(0.14 0.03 280)}
+  .q blockquote{font-family:var(--serif);font-size:20px;line-height:1.5;font-weight:300;font-style:italic}
+  .q blockquote::before{content:"\201C";color:var(--gold);font-size:56px;line-height:0;position:relative;top:20px;margin-right:6px}
+  .q cite{margin-top:24px;font-style:normal;font-size:12px;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-faint);display:flex;justify-content:space-between}
+  .q cite .who{color:var(--ink-dim)}
+  .q cite .when{color:var(--gold)}
+
+  /* faq */
+  .faq{background:var(--bg-2)}
+  .faq-list{border-top:1px solid var(--line)}
+  details{border-bottom:1px solid var(--line);padding:28px 0}
+  summary{
+    list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:32px;
+    font-family:var(--serif);font-size:26px;font-weight:400;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary .plus{width:28px;height:28px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--ink-dim);flex:0 0 auto;transition:.3s;font-style:normal}
+  details[open] summary .plus{transform:rotate(45deg);border-color:var(--gold);color:var(--gold)}
+  details p{margin-top:20px;color:var(--ink-dim);max-width:70ch;line-height:1.7;font-size:15px}
+
+  /* booking */
+  .book{
+    background:
+      radial-gradient(ellipse 50% 40% at 20% 20%,oklch(0.30 0.08 340 / 0.3),transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 80%,oklch(0.25 0.08 280 / 0.4),transparent 60%),
+      var(--bg-2);
+    position:relative;overflow:hidden;
+  }
+  .book canvas.stars{opacity:0.4}
+  .book-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;position:relative;z-index:2}
+  .book h2{font-size:clamp(48px,7vw,96px)}
+  .book .book-lede{margin-top:28px;color:var(--ink-dim);max-width:42ch;font-size:16px;line-height:1.6}
+  .book .wapp-block{margin-top:40px;display:flex;flex-direction:column;gap:16px;font-family:var(--mono);font-size:13px;color:var(--ink-dim)}
+  .book .wapp-block span{color:var(--gold);margin-right:14px}
+  .book .wapp-block a:hover{color:var(--gold)}
+  .or-line{display:flex;align-items:center;gap:16px;margin:32px 0;font-family:var(--mono);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-faint)}
+  .or-line::before,.or-line::after{content:"";flex:1;height:1px;background:var(--line)}
+
+  form.booking{display:grid;gap:20px}
+  form.booking label{display:block;font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:10px}
+  form.booking input,form.booking textarea,form.booking select{
+    width:100%;background:transparent;border:0;border-bottom:1px solid var(--line);
+    padding:10px 0;color:var(--ink);font:inherit;font-size:16px;transition:.3s;
+  }
+  form.booking input:focus,form.booking textarea:focus,form.booking select:focus{outline:0;border-color:var(--gold)}
+  form.booking select option{background:var(--bg-2)}
+  form.booking textarea{resize:vertical;min-height:80px}
+  form.booking input::placeholder,form.booking textarea::placeholder{color:var(--ink-faint);opacity:1}
+  form.booking .submit{margin-top:8px;justify-self:start}
+  form.booking .name-row{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:560px){form.booking .name-row{grid-template-columns:1fr}}
+  .form-success{padding:40px;border:1px solid var(--gold);text-align:center;font-family:var(--serif);font-size:22px;font-style:italic;color:var(--gold);line-height:1.5}
+
+  /* footer */
+  footer{background:var(--bg);border-top:1px solid var(--line);padding:72px 0 40px}
+  .f-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px}
+  footer .brand{font-size:28px}
+  footer p.motto{margin-top:16px;color:var(--ink-dim);max-width:36ch;font-family:var(--serif);font-style:italic;font-size:18px}
+  footer h5{font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  footer ul a{font-size:14px;color:var(--ink-dim)}
+  footer ul a:hover{color:var(--ink)}
+  .f-base{margin-top:64px;padding-top:28px;border-top:1px solid var(--line);display:flex;justify-content:space-between;color:var(--ink-faint);font-size:12px;font-family:var(--mono);letter-spacing:0.05em;flex-wrap:wrap;gap:12px}
+
+  /* lang transition veil */
+  #lang-veil{
+    position:fixed;inset:0;z-index:9999;
+    background:var(--bg-2);
+    opacity:0;pointer-events:none;
+    transition:opacity .32s ease;
+  }
+  #lang-veil.active{opacity:1;pointer-events:all}
+
+  /* reveal */
+  .reveal{transition:opacity .9s ease,transform .9s ease}
+  .reveal.pending{opacity:0;transform:translateY(24px)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* responsive */
+  @media(max-width:960px){
+    .hero .wrap{grid-template-columns:1fr;gap:48px}
+    .info-card{max-width:100%;margin:0 auto}
+    .sec-head{grid-template-columns:1fr}
+    .about-grid{grid-template-columns:1fr;gap:48px}
+    .about .aside{position:static}
+    .svc{grid-template-columns:40px 1fr;gap:16px}
+    .svc .d,.svc .p,.svc .arr{grid-column:2;justify-self:start}
+    .steps{grid-template-columns:1fr 1fr}
+    .step{border-right:0;border-bottom:1px solid var(--line)}
+    .q-grid{grid-template-columns:1fr 1fr}
+    .book-grid{grid-template-columns:1fr;gap:48px}
+    .f-grid{grid-template-columns:1fr 1fr;gap:32px}
+    nav.top ul{display:none}
+  }
+  @media(max-width:560px){
+    .steps{grid-template-columns:1fr}
+    .q-grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body class="lang-nl">
+
+<!-- NAV -->
+<nav class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true"></span>
+      <span>Sayon</span>
+    </a>
+    <ul>
+      <li><a href="#about"><span class="nl">Over</span><span class="en">About</span></a></li>
+      <li><a href="#services"><span class="nl">Diensten</span><span class="en">Services</span></a></li>
+      <li><a href="#how"><span class="nl">Hoe het werkt</span><span class="en">How it works</span></a></li>
+      <li><a href="#voices"><span class="nl">Stemmen</span><span class="en">Voices</span></a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button id="btnNl" class="active" onclick="setLang('nl')">NL</button>
+        <button id="btnEn" onclick="setLang('en')">EN</button>
+      </div>
+      <a class="nav-wapp" href="https://wa.me/31613972296?text=Goedendag%20Prof.%20Sayon%2C%20ik%20zou%20graag%20een%20consult%20aanvragen." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        <span class="nl">Boek een reading</span><span class="en">Book a reading</span>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <canvas class="stars" id="stars1"></canvas>
+  <div class="moon" aria-hidden="true"></div>
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">
+        <span class="dot"></span>
+        <span class="kicker nl">Medium &amp; Groot Ziener · Actief since 2001</span>
+        <span class="kicker en">Medium &amp; Seer · Established 2001</span>
+      </div>
+      <h1 class="h-display">
+        <span class="nl">Begeleiding van<br/><em>gene zijde</em>,<br/>helder gesproken.</span>
+        <span class="en">Guidance from<br/><em>beyond the veil</em>,<br/>spoken plainly.</span>
+      </h1>
+      <p class="hero-lede nl" style="margin-top:28px;max-width:46ch;font-size:17px;line-height:1.6;color:var(--ink-dim)">
+        Prof. Sayon is een werkend medium en helderziende. Al meer dan twintig jaar zit hij met
+        mensen die rouwen, zoeken, of gewoon nieuwsgierig zijn — met lezingen die warm,
+        specifiek en niet bang voor de waarheid zijn.
+      </p>
+      <p class="hero-lede en" style="margin-top:28px;max-width:46ch;font-size:17px;line-height:1.6;color:var(--ink-dim)">
+        Prof. Sayon is a working medium and clairvoyant. For more than two decades he has
+        sat with those who are grieving, searching, or simply curious — offering readings
+        that are warm, specific, and unafraid of the truth.
+      </p>
+      <div class="actions">
+        <a href="https://wa.me/31613972296?text=Goedendag%20Prof.%20Sayon%2C%20ik%20zou%20graag%20een%20consult%20aanvragen." target="_blank" rel="noopener noreferrer" class="btn-wapp">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span class="nl">Vraag een sitting aan</span><span class="en">Request a sitting</span>
+        </a>
+        <a href="#about" class="btn btn-ghost">
+          <span class="nl">Over Prof. Sayon</span><span class="en">About Prof. Sayon</span>
+        </a>
+      </div>
+    </div>
+    <div>
+      <div class="info-card">
+        <div class="corner c1"></div><div class="corner c2"></div>
+        <div class="corner c3"></div><div class="corner c4"></div>
+
+        <div class="info-status">
+          <span class="status-dot"></span>
+          <span class="nl">Beschikbaar voor consultaties</span>
+          <span class="en">Available for consultations</span>
+        </div>
+
+        <div class="info-rows">
+          <div class="info-row">
+            <span class="il nl">Uren</span>
+            <span class="il en">Hours</span>
+            <span class="iv nl">Di – Za · 10:00–20:00</span>
+            <span class="iv en">Tue – Sat · 10:00–20:00</span>
+          </div>
+          <div class="info-row">
+            <span class="il nl">Tarief</span>
+            <span class="il en">Rate</span>
+            <span class="iv-gold">€30</span>
+          </div>
+          <div class="info-row">
+            <span class="il nl">Talen</span>
+            <span class="il en">Languages</span>
+            <span class="iv">NL · EN · FR</span>
+          </div>
+          <div class="info-row">
+            <span class="il nl">Reactie</span>
+            <span class="il en">Response</span>
+            <span class="iv nl">≤ 2 werkdagen</span>
+            <span class="iv en">≤ 2 working days</span>
+          </div>
+        </div>
+
+        <a class="info-cta" href="https://wa.me/31613972296?text=Goedendag%20Prof.%20Sayon%2C%20ik%20zou%20graag%20een%20consult%20aanvragen." target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+          <span class="nl">Vraag een sitting aan</span>
+          <span class="en">Request a sitting</span>
+        </a>
+
+        <p class="info-note">
+          <span class="nl">Eerste vraag kosteloos · Volledig vertrouwelijk</span>
+          <span class="en">First question free · Fully confidential</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MARQUEE -->
+<div class="strip" aria-hidden="true">
+  <div class="strip-track">
+    <span>Helderziendheid</span><span class="sep">✦</span>
+    <span>Mediumschap</span><span class="sep">✦</span>
+    <span>Toekomstvisie</span><span class="sep">✦</span>
+    <span>Occulte Werken</span><span class="sep">✦</span>
+    <span>Rouw &amp; Begeleiding</span><span class="sep">✦</span>
+    <span>Sinds MMI</span><span class="sep">✦</span>
+    <span>Helderziendheid</span><span class="sep">✦</span>
+    <span>Mediumschap</span><span class="sep">✦</span>
+    <span>Toekomstvisie</span><span class="sep">✦</span>
+    <span>Occulte Werken</span><span class="sep">✦</span>
+    <span>Rouw &amp; Begeleiding</span><span class="sep">✦</span>
+    <span>Sinds MMI</span><span class="sep">✦</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about reveal" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="meta">
+        <span class="num">§ 01 · <span class="nl">OVER</span><span class="en">ABOUT</span></span>
+        <span class="kicker nl">De Medium</span><span class="kicker en">The Medium</span>
+      </div>
+      <h2 class="h-display">
+        <span class="nl">Een stille luisteraar<br/>met een <em>bijzonder oor</em>.</span>
+        <span class="en">A quiet listener<br/>with an <em>uncommon ear</em>.</span>
+      </h2>
+    </div>
+
+    <div class="about-grid">
+      <div>
+        <p class="nl">
+          Sommigen weten het lang voordat er een woord is gevallen. Prof. Sayon heeft
+          gezeten met duizenden bezoekers — sommigen in rouw, sommigen op een keerpunt,
+          sommigen met een vraag die ze nog geen naam kunnen geven — en heeft hen
+          teruggegeven wat al van henzelf was om te weten.
+        </p>
+        <p class="en">
+          Some know long before a word is spoken. Prof. Sayon has sat with thousands of
+          visitors — some bereaved, some at a turning point, some with a question they
+          cannot yet name — and returned to them what was already theirs to know.
+        </p>
+        <p class="nl">
+          Zijn lezingen zijn zorgvuldig, specifiek en vaak ontwapenend in hun
+          gewoonheid. Geen enscenering, geen rook. Alleen het stille werk van
+          luisteren, en de moed om uit te spreken wat gehoord wordt.
+        </p>
+        <p class="en">
+          His readings are careful, specific, and often disarming in their ordinariness.
+          No staging, no smoke. Only the quiet work of listening, and the courage to
+          speak what is heard.
+        </p>
+        <div class="stats">
+          <div class="stat"><div class="num-big">25</div><div class="lbl nl">Jaar praktijk</div><div class="lbl en">Years of practice</div></div>
+          <div class="stat"><div class="num-big">€30</div><div class="lbl nl">Per consult</div><div class="lbl en">Per consultation</div></div>
+          <div class="stat"><div class="num-big">3</div><div class="lbl nl">Talen · NL · EN · FR</div><div class="lbl en">Languages · NL · EN · FR</div></div>
+          <div class="stat"><div class="num-big">01</div><div class="lbl nl">Reading tegelijk</div><div class="lbl en">Reading at a time</div></div>
+        </div>
+      </div>
+      <aside class="aside">
+        <h4 class="nl">Praktijk &amp; aanpak</h4>
+        <h4 class="en">Practice &amp; approach</h4>
+        <ul class="nl">
+          <li>Meer dan 25 jaar actieve praktijk</li>
+          <li>Consulten via WhatsApp, telefoon of video</li>
+          <li>Werkt in het Nederlands, Engels en Frans</li>
+          <li>Geen religieuze aanpak</li>
+          <li>Volledig vertrouwelijk</li>
+          <li>Glijdende schaal beschikbaar op aanvraag</li>
+        </ul>
+        <ul class="en">
+          <li>Over 25 years of active practice</li>
+          <li>Consultations via WhatsApp, phone or video</li>
+          <li>Works in Dutch, English and French</li>
+          <li>No religious approach</li>
+          <li>Fully confidential</li>
+          <li>Sliding scale available on request</li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services reveal" id="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="meta">
+        <span class="num">§ 02 · <span class="nl">DIENSTEN</span><span class="en">SERVICES</span></span>
+        <span class="kicker nl">Het Aanbod</span><span class="kicker en">The Offerings</span>
+      </div>
+      <h2 class="h-display">
+        <span class="nl">Twee manieren om <em>samen te zitten</em>.</span>
+        <span class="en">Two ways to <em>sit together</em>.</span>
+      </h2>
+    </div>
+
+    <div class="svc-list">
+      <a class="svc" href="https://wa.me/31613972296?text=Goedendag%20Prof.%20Sayon%2C%20ik%20wil%20graag%20een%20persoonlijk%20consult%20aanvragen." target="_blank" rel="noopener noreferrer">
+        <span class="idx">I.</span>
+        <span class="t nl">Persoonlijk Consult</span>
+        <span class="t en">Personal Consultation</span>
+        <span class="d nl">Een één-op-één gesprek via WhatsApp, telefoon of video. De meest gebruikelijke plek om te beginnen. Uw eerste vraag is kosteloos.</span>
+        <span class="d en">A one-to-one sitting via WhatsApp, phone or video. The most common starting place. Your first question is free of charge.</span>
+        <span class="p"><span class="nl">vanaf</span><span class="en">from</span> €30</span>
+        <span class="arr">→</span>
+      </a>
+      <a class="svc" href="https://wa.me/31613972296?text=Goedendag%20Prof.%20Sayon%2C%20ik%20wil%20graag%20meer%20weten%20over%20de%20occulte%20werken." target="_blank" rel="noopener noreferrer">
+        <span class="idx">II.</span>
+        <span class="t nl">Occulte Werken</span>
+        <span class="t en">Occult Work</span>
+        <span class="d nl">Voor situaties waarin woorden niet volstaan. Traditionele rituelen voor liefde, bescherming en genezing — overgeleverd en verfijnd over 25 jaar praktijk. Geen religieuze aanpak.</span>
+        <span class="d en">For situations where words are not enough. Traditional rituals for love, protection and healing — handed down and refined over 25 years of practice. No religious approach.</span>
+        <span class="p"><span class="nl">op aanvraag</span><span class="en">on request</span></span>
+        <span class="arr">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how reveal" id="how">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="meta">
+        <span class="num">§ 03 · <span class="nl">HOE HET WERKT</span><span class="en">HOW IT WORKS</span></span>
+        <span class="kicker nl">Van Verzoek tot Lezing</span><span class="kicker en">From Request to Reading</span>
+      </div>
+      <h2 class="h-display">
+        <span class="nl">Een eenvoudige <em>regeling</em>.</span>
+        <span class="en">A simple <em>arrangement</em>.</span>
+      </h2>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="s-num">i.</div>
+        <h4 class="nl">U schrijft</h4>
+        <h4 class="en">You write</h4>
+        <p class="nl">Een kort bericht via WhatsApp — uw naam, het soort sitting dat u wenst, en eventuele voorkeursmomenten. Meer is niet nodig om te beginnen.</p>
+        <p class="en">A short note via WhatsApp — your name, the kind of sitting you would like, and any preferred dates. Nothing more is needed to begin.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">ii.</div>
+        <h4 class="nl">Hij reageert</h4>
+        <h4 class="en">He replies</h4>
+        <p class="nl">Binnen twee werkdagen schrijft Prof. Sayon persoonlijk terug om een tijdstip voor te stellen, en indien nodig een tarief op glijdende schaal.</p>
+        <p class="en">Within two working days, Prof. Sayon writes back personally to propose a time and, if needed, a sliding-scale fee.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">iii.</div>
+        <h4 class="nl">U zit</h4>
+        <h4 class="en">You sit</h4>
+        <p class="nl">Via WhatsApp, een rustig telefoongesprek of beveiligde video. Breng niets mee. Vragen zijn welkom; ze zijn niet vereist.</p>
+        <p class="en">Via WhatsApp, a quiet phone call or secure video. Bring nothing. Questions are welcome; they are not required.</p>
+      </div>
+      <div class="step">
+        <div class="s-num">iv.</div>
+        <h4 class="nl">U draagt het</h4>
+        <h4 class="en">You carry it</h4>
+        <p class="nl">Wat u ermee doet is geheel aan u. Alles blijft tussen u en Prof. Sayon, in volledige vertrouwelijkheid.</p>
+        <p class="en">What you do with it afterwards is entirely your own. Everything stays between you and Prof. Sayon, in full confidence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="quotes reveal" id="voices">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="meta">
+        <span class="num">§ 04 · <span class="nl">STEMMEN</span><span class="en">VOICES</span></span>
+        <span class="kicker nl">Wat bezoekers zeggen</span><span class="kicker en">What visitors say</span>
+      </div>
+      <h2 class="h-display">
+        <span class="nl">Brieven, <em>achteraf</em>.</span>
+        <span class="en">Letters, <em>afterwards</em>.</span>
+      </h2>
+    </div>
+  </div>
+
+  <div class="q-grid">
+    <div class="q">
+      <blockquote class="nl">Hij kende de naam van de hond die we als kind hadden. Er was geen manier waarop hij dat kon weten. Ik ben er nooit meer dezelfde na geweest, en ik bedoel dat vriendelijk.</blockquote>
+      <blockquote class="en">He knew the name of the dog we had as children. There was no way for him to know. I have not been the same since, and I mean that kindly.</blockquote>
+      <cite><span class="who">— Margriet V.</span><span class="when">Utrecht · 2025</span></cite>
+    </div>
+    <div class="q">
+      <blockquote class="nl">Ik kwam sceptisch en vertrok met iets wat ik niet onder woorden kan brengen — alleen dat ik een week later de juiste beslissing nam over het huis van mijn moeder.</blockquote>
+      <blockquote class="en">I came skeptical, and left with something I cannot put into words — only that I made the right choice about my mother's house a week later.</blockquote>
+      <cite><span class="who">— Daan H.</span><span class="when">Den haag · 2024</span></cite>
+    </div>
+    <div class="q">
+      <blockquote class="nl">Sayon is het minst theatrale persoon dat u ooit zult ontmoeten. Hij zit gewoon, luistert, en vertelt u dan iets wat u al half wist.</blockquote>
+      <blockquote class="en">Sayon is the least theatrical person you will ever meet. He simply sits, and listens, and then tells you something you already half-knew.</blockquote>
+      <cite><span class="who">— Eliza T.</span><span class="when">Den Haag · 2025</span></cite>
+    </div>
+    <div class="q">
+      <blockquote class="nl">Mijn vader sprak door hem. De woorden waren zijn woorden. Ik begreep eindelijk wat hij al dertig jaar had proberen te zeggen.</blockquote>
+      <blockquote class="en">My father spoke through him. The words were his words. I understood at last what he had been trying to say for thirty years.</blockquote>
+      <cite><span class="who">— Jan P.</span><span class="when">Amsterdam · 2005</span></cite>
+    </div>
+    <div class="q">
+      <blockquote class="nl">Hij zei dat ik drie maanden moest wachten voor ik tekende. Ik wachtte. Het bod dat ik in mei ontving was twee keer zo hoog als wat er in februari op tafel lag.</blockquote>
+      <blockquote class="en">He told me to wait three months before signing. I waited. The offer I received in May was twice what had been on the table in February.</blockquote>
+      <cite><span class="who">— Soraya K.</span><span class="when">Den haag · 2025</span></cite>
+    </div>
+    <div class="q">
+      <blockquote class="nl">Een diep vriendelijke man. Geen spektakel, geen mystificatie. Hij behandelt het werk als een ambacht, en zijn bezoekers als volwassenen.</blockquote>
+      <blockquote class="en">A deeply kind man. No spectacle, no mystery-making. He treats the work as a craft, and his visitors as adults.</blockquote>
+      <cite><span class="who">— Thomas L.</span><span class="when">Antwerpen · 2012</span></cite>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq reveal" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="meta">
+        <span class="num">§ 05 · <span class="nl">VRAGEN</span><span class="en">QUESTIONS</span></span>
+        <span class="kicker nl">Voordat u schrijft</span><span class="kicker en">Before you write</span>
+      </div>
+      <h2 class="h-display">
+        <span class="nl">Veelgestelde <em>aarzelingen</em>.</span>
+        <span class="en">Common <em>hesitations</em>.</span>
+      </h2>
+    </div>
+
+    <div class="faq-list">
+      <details open>
+        <summary>
+          <span class="nl">Moet ik ergens in geloven om te komen?</span>
+          <span class="en">Do I need to believe in anything to come?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Nee. Veel bezoekers van Prof. Sayon zijn sceptici, en sommigen zijn voormalige sceptici. Wat van u wordt gevraagd is geen geloof, maar slechts een uur eerlijkheid en de bereidheid verrast te worden.</p>
+        <p class="en">No. Many of Prof. Sayon's visitors are skeptics, and several are lapsed skeptics. What is asked of you is not belief, only an hour of honesty and a willingness to be surprised.</p>
+      </details>
+      <details>
+        <summary>
+          <span class="nl">Wat moet ik meebrengen?</span>
+          <span class="en">What should I bring?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Uzelf. Objecten en foto's zijn niet nodig en worden zachtjes ontmoedigd — ze kunnen de lezing eerder vernauwen dan openen.</p>
+        <p class="en">Yourself. Objects and photographs are not necessary and are gently discouraged — they can narrow rather than open the reading.</p>
+      </details>
+      <details>
+        <summary>
+          <span class="nl">Kan Prof. Sayon contact maken met een specifiek iemand die is overgegaan?</span>
+          <span class="en">Can Prof. Sayon contact a specific person who has passed?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Hij zal het proberen, en slaagt er zeer vaak in, maar geen eerlijk medium kan beloven dat een bepaalde naam doorkwam. Wat geboden wordt is een opening; wat erdoorheen aankomt kan niet altijd worden gekozen.</p>
+        <p class="en">He will try, and very often succeeds, but no honest medium can promise a particular name will come through. What is offered is an opening; what arrives through it cannot always be chosen.</p>
+      </details>
+      <details>
+        <summary>
+          <span class="nl">Zijn sittings vertrouwelijk?</span>
+          <span class="en">Are sittings confidential?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Volledig. Niets wat besproken wordt verlaat de ruimte. Namen en details worden nooit gebruikt in geschriften, pers of onderwijs.</p>
+        <p class="en">Entirely. Nothing discussed leaves the room. Names and details are never used in writing, press, or teaching.</p>
+      </details>
+      <details>
+        <summary>
+          <span class="nl">Is er een glijdende schaal?</span>
+          <span class="en">Is there a sliding scale?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Ja. Als het tarief een belemmering vormt, zeg dat dan in uw bericht. Een deel van de consulten van elke maand is gereserveerd tegen verlaagde of geen kosten.</p>
+        <p class="en">Yes. If the fee is a barrier, please say so in your message. A portion of each month's consultations is reserved at reduced or no cost for those who need them.</p>
+      </details>
+      <details>
+        <summary>
+          <span class="nl">Kan ik boeken voor iemand anders als cadeau?</span>
+          <span class="en">Can I book for someone else as a gift?</span>
+          <span class="plus">+</span>
+        </summary>
+        <p class="nl">Dat kan, maar de sitting moet vrijwillig worden opgepakt door de persoon zelf. Een lezing die onwillig wordt gegeven is gewoonlijk een slechte lezing, en Prof. Sayon zal vriendelijk weigeren.</p>
+        <p class="en">You may, but the sitting must be taken up willingly by the person themselves. A reading given reluctantly is usually a poor reading, and Prof. Sayon will decline it kindly.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section class="book reveal" id="book">
+  <canvas class="stars" id="stars2"></canvas>
+  <div class="wrap">
+    <div class="book-grid">
+      <div>
+        <span class="num">§ 06 · <span class="nl">SCHRIJF HEM</span><span class="en">WRITE TO HIM</span></span>
+        <h2 class="h-display" style="margin-top:16px">
+          <span class="nl">Stuur een paar regels.<br/>Hij <em>beantwoordt ze allemaal.</em></span>
+          <span class="en">Send a few lines.<br/>He <em>answers every one.</em></span>
+        </h2>
+        <p class="book-lede nl">
+          Prof. Sayon werkt via WhatsApp — de snelste manier om hem te bereiken.
+          Schrijf zoals u aan een persoon zou schrijven. Een zin is genoeg om te beginnen.
+        </p>
+        <p class="book-lede en">
+          Prof. Sayon works via WhatsApp — the fastest way to reach him.
+          Write as you would to a person, not a form. A sentence is enough to begin.
+        </p>
+        <div class="wapp-block">
+          <div>
+            <span>W</span>
+            <a href="https://wa.me/31613972296" target="_blank" rel="noopener noreferrer">+31 6 139 72 296</a>
+          </div>
+          <div>
+            <span>B</span>
+            <span class="nl">Di – Za · 10:00 – 20:00</span>
+            <span class="en">Tue – Sat · 10:00 – 20:00</span>
+          </div>
+          <div>
+            <span>L</span>
+            <span>Den haag · Nederland</span>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="or-line nl">Of stuur een bericht</div>
+        <div class="or-line en">Or send a message</div>
+        <form class="booking" id="bookingForm" novalidate>
+          <div class="name-row">
+            <div>
+              <label for="firstname"><span class="nl">Voornaam</span><span class="en">First name</span></label>
+              <input id="firstname" name="firstname" type="text" required placeholder="—">
+            </div>
+            <div>
+              <label for="lastname"><span class="nl">Achternaam</span><span class="en">Last name</span></label>
+              <input id="lastname" name="lastname" type="text" required placeholder="—">
+            </div>
+          </div>
+          <div>
+            <label for="birthdate"><span class="nl">Geboortedatum</span><span class="en">Date of birth</span></label>
+            <input id="birthdate" name="birthdate" type="date" required>
+          </div>
+          <div>
+            <label for="phone"><span class="nl">Uw telefoonnummer</span><span class="en">Your phone number</span></label>
+            <input id="phone" name="phone" type="tel" required placeholder="+31 6 …">
+          </div>
+          <div>
+            <label for="kind"><span class="nl">Soort consult</span><span class="en">Type of sitting</span></label>
+            <select id="kind" name="kind">
+              <option value="">— <span class="nl">Kies een optie</span><span class="en">Please choose</span> —</option>
+              <option>Persoonlijk Consult</option>
+              <option>Occulte Werken / Occult Work</option>
+              <option>Anders / Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="note"><span class="nl">Een paar woorden</span><span class="en">A few words</span></label>
+            <textarea id="note" name="note" rows="3" placeholder="U hoeft niet specifiek te zijn. Een zin is voldoende."></textarea>
+          </div>
+          <button class="btn btn-primary submit" type="submit">
+            <span class="nl">Verstuur →</span><span class="en">Send →</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <div class="brand"><span class="mark" aria-hidden="true"></span><span>Prof. Sayon</span></div>
+        <p class="motto">
+          <span class="nl">"Wat verborgen is, is zelden ver. Het wacht alleen om aangesproken te worden."</span>
+          <span class="en">"What is hidden is rarely far. It is only waiting to be spoken to."</span>
+        </p>
+      </div>
+      <div>
+        <h5 class="nl">Navigatie</h5>
+        <h5 class="en">Navigate</h5>
+        <ul>
+          <li><a href="#about"><span class="nl">Over</span><span class="en">About</span></a></li>
+          <li><a href="#services"><span class="nl">Diensten</span><span class="en">Services</span></a></li>
+          <li><a href="#how"><span class="nl">Hoe het werkt</span><span class="en">How it works</span></a></li>
+          <li><a href="#voices"><span class="nl">Stemmen</span><span class="en">Voices</span></a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="https://wa.me/31613972296" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+          <li>+31 6 139 72 296</li>
+          <li>Den haag · Nederland</li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="nl">Elders</h5>
+        <h5 class="en">Elsewhere</h5>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Substack</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-base">
+      <span>© MMXXVI Sayon · <span class="nl">Alle consulten in vertrouwelijkheid</span><span class="en">All readings held in confidence</span></span>
+      <span class="nl">Den haag · Nederland</span><span class="en">Den haag · Netherlands</span>
+    </div>
+  </div>
+</footer>
+
+<div id="lang-veil" aria-hidden="true"></div>
+
+<script>
+/* ── language toggle ── */
+function setLang(lang, animate) {
+  if (animate === false) {
+    document.body.classList.remove('lang-nl','lang-en');
+    document.body.classList.add('lang-' + lang);
+    document.documentElement.lang = lang;
+    document.getElementById('btnNl').classList.toggle('active', lang === 'nl');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('sayon-lang', lang); } catch(e) {}
+    return;
+  }
+  if (document.body.classList.contains('lang-' + lang)) return;
+  const veil = document.getElementById('lang-veil');
+  veil.classList.add('active');
+  setTimeout(() => {
+    document.body.classList.remove('lang-nl','lang-en');
+    document.body.classList.add('lang-' + lang);
+    document.documentElement.lang = lang;
+    document.getElementById('btnNl').classList.toggle('active', lang === 'nl');
+    document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+    try { localStorage.setItem('sayon-lang', lang); } catch(e) {}
+    requestAnimationFrame(() => requestAnimationFrame(() => veil.classList.remove('active')));
+  }, 320);
+}
+try { const s = localStorage.getItem('sayon-lang'); if(s === 'en') setLang('en', false); } catch(e) {}
+
+/* ── starfield ── */
+function starfield(canvas, count) {
+  const ctx = canvas.getContext('2d');
+  let stars=[], w=0, h=0, raf=0;
+  const dpr = Math.min(window.devicePixelRatio||1, 2);
+  function resize() {
+    w = canvas.clientWidth; h = canvas.clientHeight;
+    canvas.width = w*dpr; canvas.height = h*dpr;
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+    stars = Array.from({length:count}, ()=>({
+      x: Math.random()*w, y: Math.random()*h,
+      r: Math.random()*1.2+0.2,
+      a: Math.random()*0.6+0.2,
+      tw: Math.random()*0.02+0.004,
+      p: Math.random()*Math.PI*2
+    }));
+  }
+  function tick(t) {
+    ctx.clearRect(0,0,w,h);
+    for(const s of stars) {
+      const a = s.a + Math.sin(t*s.tw+s.p)*0.25;
+      ctx.globalAlpha = Math.max(0, Math.min(1, a));
+      ctx.fillStyle = Math.random() > 0.995 ? 'oklch(0.82 0.12 85)' : '#f4ecd8';
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
+    }
+    raf = requestAnimationFrame(tick);
+  }
+  const ro = new ResizeObserver(resize); ro.observe(canvas);
+  resize(); raf = requestAnimationFrame(tick);
+}
+starfield(document.getElementById('stars1'), 180);
+starfield(document.getElementById('stars2'), 72);
+
+/* ── scroll reveal ── */
+(function(){
+  const els = document.querySelectorAll('.reveal');
+  const vh = window.innerHeight;
+  els.forEach(el => {
+    const r = el.getBoundingClientRect();
+    if(r.top > vh * 0.9) el.classList.add('pending');
+    else el.classList.add('in');
+  });
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.remove('pending'); e.target.classList.add('in'); io.unobserve(e.target); }
+  }), {rootMargin:'0px 0px -10% 0px', threshold:0.01});
+  document.querySelectorAll('.reveal.pending').forEach(el => io.observe(el));
+  setTimeout(()=>document.querySelectorAll('.reveal.pending').forEach(el=>{el.classList.remove('pending');el.classList.add('in');}),3000);
+})();
+
+/* ── moon parallax ── */
+const moon = document.querySelector('.moon');
+window.addEventListener('scroll', ()=>{
+  const y = window.scrollY;
+  if(moon && y < 1200) moon.style.transform = `translateY(${y*0.25}px)`;
+},{passive:true});
+
+/* ── smooth scroll ── */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const id = a.getAttribute('href');
+    if(id.length < 2) return;
+    const t = document.querySelector(id);
+    if(!t) return;
+    e.preventDefault();
+    t.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+});
+
+/* ── booking form ── */
+document.getElementById('bookingForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const isEn = document.body.classList.contains('lang-en');
+
+  const first    = document.getElementById('firstname').value.trim();
+  const last     = document.getElementById('lastname').value.trim();
+  const phone    = document.getElementById('phone').value.trim();
+  const kind     = document.getElementById('kind').value || '—';
+  const note     = document.getElementById('note').value.trim();
+
+  const rawDate  = document.getElementById('birthdate').value;
+  const birthdate = rawDate
+    ? rawDate.split('-').reverse().join('-')
+    : '—';
+
+  const text = isEn
+    ? `Hello Prof. Sayon,\n\nFirst name: ${first}\nLast name: ${last}\nDate of birth: ${birthdate}\nPhone: ${phone}\nType of sitting: ${kind}${note ? '\n\n' + note : ''}`
+    : `Goedendag Prof. Sayon,\n\nVoornaam: ${first}\nAchternaam: ${last}\nGeboortedatum: ${birthdate}\nTelefoon: ${phone}\nSoort consult: ${kind}${note ? '\n\n' + note : ''}`;
+
+  window.open(
+    'https://wa.me/31613972296?text=' + encodeURIComponent(text),
+    '_blank', 'noopener,noreferrer'
+  );
+});
+</script>
+</body>
+</html>

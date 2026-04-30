@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact — Mr. Sayon · Helderziendheid Nederland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=UnifrakturCook:wght@700&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<style>
+  .contact-grid{
+    display:grid;grid-template-columns:1fr 1.1fr;gap:48px;margin-top:32px;
+  }
+  .c-card{
+    padding:32px;border:1px solid var(--gold);
+    background:linear-gradient(180deg, rgba(42,10,62,0.4), rgba(11,4,16,0.7));
+    position:relative;
+  }
+  .c-card::before{content:"";position:absolute;top:-1px;left:-1px;width:20px;height:20px;border-top:3px solid var(--gold-br);border-left:3px solid var(--gold-br)}
+  .c-card::after{content:"";position:absolute;bottom:-1px;right:-1px;width:20px;height:20px;border-bottom:3px solid var(--gold-br);border-right:3px solid var(--gold-br)}
+  .c-card h3{
+    font-family:var(--display);font-weight:700;font-size:32px;color:var(--gold-br);
+    margin-bottom:20px;text-shadow:2px 2px 0 #000;
+  }
+  .c-line{
+    display:flex;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line);
+    align-items:baseline;
+  }
+  .c-line .lbl{
+    font-family:var(--mono);font-size:11px;letter-spacing:0.2em;color:var(--gold);
+    text-transform:uppercase;min-width:90px;
+  }
+  .c-line .val{font-family:var(--serif);font-size:20px;color:var(--bone)}
+  .c-line .val a{color:var(--gold-br);text-decoration:underline dotted var(--gold-dim)}
+  .c-line .wa-tag{
+    display:inline-block;margin-left:10px;padding:2px 8px;
+    background:#128c7e;color:#fff;font-family:var(--mono);font-size:10px;
+    letter-spacing:0.15em;border-radius:2px;vertical-align:middle;
+  }
+
+  .price-box{
+    margin-top:24px;padding:24px;text-align:center;
+    background:linear-gradient(180deg, rgba(212,175,55,0.15), rgba(212,175,55,0.05));
+    border:2px solid var(--gold);
+  }
+  .price-box .big{
+    font-family:var(--display);font-weight:700;font-size:56px;color:var(--gold-br);
+    text-shadow:0 0 18px rgba(212,175,55,0.4), 2px 2px 0 #000;letter-spacing:0.02em;
+  }
+  .price-box .lbl{
+    font-family:var(--mono);font-size:11px;letter-spacing:0.2em;color:var(--gold);
+    text-transform:uppercase;margin-top:4px;
+  }
+  .price-box .note{
+    margin-top:10px;font-family:var(--serif);font-style:italic;color:var(--mist);font-size:15px;
+  }
+
+  /* form */
+  form.contact-form{display:grid;gap:20px;padding:32px;border:1px solid var(--gold);
+    background:linear-gradient(180deg, rgba(42,10,62,0.3), rgba(11,4,16,0.6));position:relative}
+  form.contact-form::before{content:"";position:absolute;top:-1px;left:-1px;width:20px;height:20px;border-top:3px solid var(--gold-br);border-left:3px solid var(--gold-br)}
+  form.contact-form::after{content:"";position:absolute;bottom:-1px;right:-1px;width:20px;height:20px;border-bottom:3px solid var(--gold-br);border-right:3px solid var(--gold-br)}
+  form.contact-form h3{
+    font-family:var(--display);font-weight:700;font-size:28px;color:var(--gold-br);
+    margin-bottom:8px;text-shadow:2px 2px 0 #000;
+  }
+  form.contact-form .intro{font-family:var(--serif);color:var(--mist);font-size:15px;margin-bottom:8px}
+  form.contact-form label{
+    display:block;font-family:var(--mono);font-size:10px;letter-spacing:0.2em;
+    color:var(--gold);text-transform:uppercase;margin-bottom:8px;
+  }
+  form.contact-form input, form.contact-form textarea{
+    width:100%;background:rgba(0,0,0,0.5);color:var(--bone);
+    border:1px solid var(--line);padding:12px 14px;
+    font:inherit;font-size:16px;
+  }
+  form.contact-form input:focus, form.contact-form textarea:focus{
+    outline:0;border-color:var(--gold);background:rgba(0,0,0,0.8);
+  }
+  form.contact-form textarea{resize:vertical;min-height:140px;font-family:var(--serif)}
+  form.contact-form .submit-row{display:flex;justify-content:flex-end;margin-top:4px}
+  .form-success{
+    padding:32px;border:2px solid var(--gold);
+    background:linear-gradient(180deg, rgba(212,175,55,0.15), rgba(11,4,16,0.8));
+    text-align:center;
+    font-family:var(--display);font-weight:700;font-size:28px;color:var(--gold-br);
+    text-shadow:0 0 18px rgba(212,175,55,0.4), 2px 2px 0 #000;
+  }
+
+  @media(max-width:840px){
+    .contact-grid{grid-template-columns:1fr}
+  }
+
+  /* keyword cloud */
+  .keyword-cloud{
+    margin-top:80px;padding:40px 0 20px;
+    border-top:1px solid var(--line-2);
+    text-align:center;
+  }
+  .keyword-cloud .lbl{
+    font-family:var(--mono);font-size:10px;letter-spacing:0.3em;color:var(--ink-dim);
+    text-transform:uppercase;margin-bottom:20px;
+  }
+  .keyword-cloud .cloud{
+    line-height:1.9;color:#3a3350;font-family:var(--serif);
+    max-width:960px;margin:0 auto;
+    font-size:13px;
+  }
+  .keyword-cloud .cloud span{margin:0 6px;white-space:nowrap}
+  .keyword-cloud .cloud .w1{font-size:14px;color:#433a5a}
+  .keyword-cloud .cloud .w2{font-size:15px;color:#4a4062}
+  .keyword-cloud .cloud .w3{font-size:17px;color:#544668}
+  .keyword-cloud .cloud .w4{font-size:19px;color:#5d4d6e;font-style:italic}
+</style>
+</head>
+<body>
+
+<div class="site-top">
+  <div class="site-header">
+    <div class="eyelet" aria-hidden="true"></div>
+    <h1 class="brand"><span class="line">MR.</span><span class="line line-2">SAYON</span></h1>
+    <div class="role">medium &amp; groot ziener · sinds 2001</div>
+    <div class="call-row">
+      <a class="phone" href="tel:+31000000000">BEL: +31 (0)00 000 00 00</a>
+      <a class="wapp" href="#">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        WHATSAPP
+      </a>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <div class="wrap">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="over.html">MR. SAYON</a></li>
+        <li><a href="diensten.html">DIENSTEN</a></li>
+        <li class="active"><a href="contact.html">CONTACT</a></li>
+        <li><a href="index.html#meer">MEER</a></li>
+      </ul>
+      <div class="flag"><span class="nl" aria-hidden="true"></span> NEDERLAND</div>
+    </div>
+  </nav>
+</div>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="kicker">§ Contact</div>
+    <h2>Helderziendheid Nederland</h2>
+    <div class="under">neem contact op — vandaag nog antwoord</div>
+  </div>
+</div>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <div class="c-card">
+          <h3>Bereikbaarheid</h3>
+          <div class="c-line">
+            <span class="lbl">Naam</span>
+            <span class="val">Mr. Sayon</span>
+          </div>
+          <div class="c-line">
+            <span class="lbl">Telefoon</span>
+            <span class="val"><a href="tel:+31000000000">+31 (0)00 000 00 00</a> <span class="wa-tag">WhatsApp</span></span>
+          </div>
+          <div class="c-line">
+            <span class="lbl">E-mail</span>
+            <span class="val"><a href="mailto:contact@sayon.nl">contact@sayon.nl</a></span>
+          </div>
+          <div class="c-line" style="border-bottom:0">
+            <span class="lbl">Werkgebied</span>
+            <span class="val">Amsterdam · geheel Nederland · op afstand wereldwijd</span>
+          </div>
+        </div>
+
+        <div class="price-box">
+          <div class="big">CONSULT : 30 €uro</div>
+          <div class="lbl">vast tarief · per zitting</div>
+          <div class="note">Betalingsfaciliteiten beschikbaar — vraag er gerust naar.</div>
+        </div>
+
+        <p class="copy" style="margin-top:24px;font-size:17px;color:var(--mist)">
+          Mr. Sayon leest iedere boodschap persoonlijk. Antwoord binnen één
+          werkdag, doorgaans sneller. WhatsApp blijft de snelste weg — ook voor
+          korte vragen voorafgaand aan een consult.
+        </p>
+      </div>
+
+      <form class="contact-form" id="cf" novalidate>
+        <div>
+          <h3>Schrijf Mr. Sayon</h3>
+          <p class="intro">Een paar regels volstaan. Geef aan waar het om gaat en of u de voorkeur geeft aan telefoon, WhatsApp of een afspraak in persoon.</p>
+        </div>
+        <div>
+          <label for="cname">Uw naam</label>
+          <input id="cname" type="text" required placeholder="Hoe mag Mr. Sayon u aanspreken ?"/>
+        </div>
+        <div>
+          <label for="cemail">E-mail of telefoon</label>
+          <input id="cemail" type="text" required placeholder="zodat er een antwoord bij u aan kan komen"/>
+        </div>
+        <div>
+          <label for="cmsg">Uw bericht</label>
+          <textarea id="cmsg" rows="5" placeholder="Waar gaat het over ? Eén zin volstaat."></textarea>
+        </div>
+        <div class="submit-row">
+          <button type="submit" class="btn">STUUR HET BERICHT →</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- KEYWORD CLOUD (SEO) -->
+    <div class="keyword-cloud" aria-hidden="true">
+      <div class="lbl">— trefwoorden —</div>
+      <div class="cloud">
+        <span class="w4">marabout nederland</span> ·
+        <span class="w3">helderziende amsterdam</span> ·
+        <span class="w2">medium op afstand</span> ·
+        <span class="w1">liefdesritueel</span> ·
+        <span class="w3">terugkeer geliefde</span> ·
+        <span class="w2">vloek verwijderen</span> ·
+        <span class="w1">bescherming gezin</span> ·
+        <span class="w4">occulte werken</span> ·
+        <span class="w2">spiritueel consult</span> ·
+        <span class="w1">bindingen oplossen</span> ·
+        <span class="w3">afrikaanse ziener</span> ·
+        <span class="w2">tweede zicht</span> ·
+        <span class="w1">psychisch medium</span> ·
+        <span class="w3">clairvoyance nederland</span> ·
+        <span class="w1">spreukwerk</span> ·
+        <span class="w2">mediumschap</span> ·
+        <span class="w1">geldproblemen</span> ·
+        <span class="w2">werk &amp; kansen</span> ·
+        <span class="w1">huiszuivering</span> ·
+        <span class="w3">liefde terugwinnen</span> ·
+        <span class="w2">voorouderlijke kennis</span> ·
+        <span class="w1">esoterisch advies</span> ·
+        <span class="w4">whatsapp helderziende</span> ·
+        <span class="w1">scheiding begeleiden</span> ·
+        <span class="w2">geluksritueel</span> ·
+        <span class="w1">gezondheid &amp; energie</span> ·
+        <span class="w2">gevoelensspecialist</span> ·
+        <span class="w1">rotterdam medium</span> ·
+        <span class="w1">den haag ziener</span> ·
+        <span class="w1">utrecht helderziend</span> ·
+        <span class="w1">groningen marabout</span> ·
+        <span class="w2">toekomst lezen</span> ·
+        <span class="w1">familiebescherming</span> ·
+        <span class="w1">energiewerk</span> ·
+        <span class="w3">mr sayon</span> ·
+        <span class="w2">groot ziener</span> ·
+        <span class="w1">ritueel liefde</span> ·
+        <span class="w1">ritueel bescherming</span> ·
+        <span class="w1">ritueel voorspoed</span> ·
+        <span class="w2">verzoening</span> ·
+        <span class="w1">obsessie opheffen</span> ·
+        <span class="w1">negatieve energie</span> ·
+        <span class="w2">werkhervatting</span> ·
+        <span class="w1">juridische zaken</span> ·
+        <span class="w1">contract &amp; rechtspraak</span> ·
+        <span class="w3">afstandsconsult</span> ·
+        <span class="w1">vertrouwelijk consult</span> ·
+        <span class="w1">eerste vraag kosteloos</span> ·
+        <span class="w2">€30 consult</span> ·
+        <span class="w1">betaal in termijnen</span> ·
+        <span class="w1">advies op maat</span> ·
+        <span class="w1">geen religie</span> ·
+        <span class="w1">geen dogma</span> ·
+        <span class="w2">ziener amsterdam jordaan</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">MR. SAYON</div>
+        <div class="role">groot ziende marabout-specialist</div>
+        <p style="margin-top:14px;color:var(--ink-dim);font-size:13px;line-height:1.6;max-width:36ch">
+          Vertrouwelijke consulten op afstand en in Amsterdam. 25 jaar ervaring. Geen religieuze aanpak.
+        </p>
+      </div>
+      <div>
+        <h6>Navigatie</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over.html">Mr. Sayon</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <div class="contact">
+          <a href="tel:+31000000000">+31 (0)00 000 00 00</a><br/>
+          WhatsApp 24u · 7d<br/>
+          Amsterdam · Nederland<br/>
+          Consult: <strong style="color:var(--gold)">€30</strong>
+        </div>
+      </div>
+    </div>
+    <div class="base">
+      <span>© MMXXVI · Mr. Sayon · Alle rechten voorbehouden</span>
+      <span>Alle consulten in vertrouwelijkheid · betalingsfaciliteiten mogelijk</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('cf').addEventListener('submit', e=>{
+  e.preventDefault();
+  const n = document.getElementById('cname').value.trim() || 'bezoeker';
+  e.currentTarget.outerHTML = `<div class="form-success">✦ Bedankt voor wat u verzond, ${n} ! ✦<br><span style="font-family:var(--serif);font-style:italic;font-size:18px;color:var(--mist);text-shadow:none;font-weight:400">Mr. Sayon schrijft u binnen één werkdag persoonlijk terug.</span></div>`;
+});
+</script>
+</body>
+</html>

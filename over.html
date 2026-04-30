@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mr. Sayon — Occulte werken · Nederland</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=UnifrakturCook:wght@700&display=swap" />
+<link rel="stylesheet" href="site.css" />
+<style>
+  .photo-row{
+    display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:32px 0;
+  }
+  .photo{
+    aspect-ratio:4/3;position:relative;border:1px solid var(--gold);overflow:hidden;
+    background:#000;
+  }
+  .photo::before{
+    content:"";position:absolute;inset:0;
+    background:var(--p-bg, radial-gradient(circle at 50% 50%, #4a1170, #0b0410 70%));
+  }
+  .p1::before{background:
+    radial-gradient(circle 120px at 50% 55%, rgba(244,213,122,0.5) 0%, rgba(122,24,34,0.3) 40%, transparent 70%),
+    radial-gradient(ellipse at center, rgba(74,17,112,0.7), transparent 60%),
+    linear-gradient(180deg, #1a0628 0%, #0b0410 100%);
+  }
+  .p2::before{background:
+    repeating-linear-gradient(90deg, rgba(212,175,55,0.08) 0 2px, transparent 2px 30px),
+    radial-gradient(ellipse at center, rgba(179,40,56,0.6), transparent 60%),
+    linear-gradient(135deg, #2a0a3e, #0b0410);
+  }
+  .photo .icon{
+    position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-size:80px;color:var(--gold-br);
+    text-shadow:0 0 30px rgba(212,175,55,0.7);
+  }
+  .photo .cap{
+    position:absolute;bottom:10px;left:10px;right:10px;
+    font-family:var(--mono);font-size:10px;color:var(--gold);letter-spacing:0.2em;
+    text-transform:uppercase;
+    background:rgba(0,0,0,0.7);padding:4px 8px;
+  }
+
+  /* crystal-ball animated gif replacement */
+  .orb{
+    margin:40px auto;width:220px;height:220px;border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 30%, rgba(255,255,255,0.6), transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(244,213,122,0.5), rgba(74,17,112,0.8) 50%, #0b0410 90%);
+    box-shadow:
+      0 0 80px rgba(212,175,55,0.5),
+      inset 0 0 60px rgba(0,0,0,0.6);
+    position:relative;
+    animation:orb-breathe 4s ease-in-out infinite;
+  }
+  .orb::before{
+    content:"";position:absolute;inset:-30px;border-radius:50%;
+    border:1px dashed var(--gold);opacity:0.5;
+    animation:spin 30s linear infinite;
+  }
+  .orb::after{
+    content:"";position:absolute;inset:-60px;border-radius:50%;
+    border:1px solid var(--line);opacity:0.6;
+    animation:spin 60s linear infinite reverse;
+  }
+  @keyframes orb-breathe{
+    50%{box-shadow:0 0 120px rgba(212,175,55,0.8), inset 0 0 80px rgba(0,0,0,0.7);transform:scale(1.02)}
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  .fs-label{
+    text-align:center;margin:40px 0 20px;
+    font-family:var(--display);font-weight:700;font-size:48px;color:var(--gold-br);
+    text-shadow:0 0 24px rgba(212,175,55,0.4), 2px 2px 0 #000;
+    letter-spacing:0.1em;
+  }
+
+  @media(max-width:680px){
+    .photo-row{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<div class="site-top">
+  <div class="site-header">
+    <div class="eyelet" aria-hidden="true"></div>
+    <h1 class="brand"><span class="line">MR.</span><span class="line line-2">SAYON</span></h1>
+    <div class="role">medium &amp; groot ziener · sinds 2001</div>
+    <div class="call-row">
+      <a class="phone" href="tel:+31000000000">BEL: +31 (0)00 000 00 00</a>
+      <a class="wapp" href="#">
+        <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+        WHATSAPP
+      </a>
+    </div>
+  </div>
+  <nav class="site-nav">
+    <div class="wrap">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li class="active"><a href="over.html">MR. SAYON</a></li>
+        <li><a href="diensten.html">DIENSTEN</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+        <li><a href="index.html#meer">MEER</a></li>
+      </ul>
+      <div class="flag"><span class="nl" aria-hidden="true"></span> NEDERLAND</div>
+    </div>
+  </nav>
+</div>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="kicker">§ Over Mr. Sayon</div>
+    <h2>Occulte werken Nederland</h2>
+    <div class="under">voorouderlijke kennis, in hedendaagse handen</div>
+  </div>
+</div>
+
+<section class="blk">
+  <div class="wrap">
+    <div class="photo-row">
+      <div class="photo p1"><div class="icon">☽</div><div class="cap">PLAAT I · DE WERKPLAATS</div></div>
+      <div class="photo p2"><div class="icon">🕯</div><div class="cap">PLAAT II · HET KAARSLICHT</div></div>
+    </div>
+
+    <p class="copy">
+      Mr. Sayon is drager van <strong>voorouderlijke krachten</strong> — een kennis die
+      in zijn familie van grootouder op kleinkind is doorgegeven, lang voordat hij
+      er in 2001 een beroep van maakte. Zijn werk bestaat uit <strong>het verwijderen
+      van vloeken en bindingen</strong>, het in gesprek gaan met de geesten van de
+      onzichtbare wereld, het aan het licht brengen van wat verborgen is gehouden,
+      en het beschermen van wie hem raadpleegt tegen wat nog komen kan.
+    </p>
+    <p class="copy">
+      Hij werkt op eigen wijze: zonder religieuze inkleding, zonder grote woorden,
+      en zonder de theatrale toeren die men soms van een marabout verwacht. Wat
+      hier gedaan wordt, is <em>ambacht</em>. Zorgvuldig, vertrouwelijk, en met
+      respect voor ieder leven dat zijn spreekkamer binnenstapt.
+    </p>
+
+    <div class="interrupt">
+      Tob niet alleen ! Raadpleeg snel Mr. Sayon
+    </div>
+
+    <p class="copy">
+      Voelt u zich betoverd, achtervolgd door vreemde voorgevoelens, of terugkerende
+      dromen die niet van u lijken te zijn ? Dit is geen inbeelding, en het is ook
+      geen schande. Mr. Sayon behandelt dit met een <strong>esoterische benadering</strong>,
+      gestoeld op observatie, rust en een zorgvuldige lezing — geen religie, geen
+      angstaanjagerij, geen beloftes die hij niet kan waarmaken.
+    </p>
+    <p class="copy">
+      <em>Liefde</em> blijft reden nummer één waarom men een medium in Nederland opzoekt:
+      een relatie die wankelt, een geliefde die zich heeft afgekeerd, een verlangen
+      dat men niet meer durft uit te spreken. Daar kan Mr. Sayon u bij helpen — met
+      zichtbaarheid, met richting, en waar nodig met werk dat buiten het zichtbare ligt.
+    </p>
+
+    <div class="fs-label">◈ SPECIALIST VAN HET GEVOEL ◈</div>
+
+    <div class="orb" aria-hidden="true"></div>
+
+    <p class="copy" style="text-align:center;max-width:680px;margin:0 auto">
+      Mr. Sayon werkt vanuit Amsterdam. Consulten vinden plaats per telefoon, via
+      WhatsApp of op afspraak in persoon. Iedere zitting is vertrouwelijk —
+      niets verlaat de kamer, en er wordt nimmer iets vastgelegd buiten uw medeweten om.
+    </p>
+
+    <div class="cta-close">
+      <div class="name">MR. SAYON</div>
+      <div class="title">groot ziende marabout-specialist</div>
+      <a class="phone" href="tel:+31000000000">+31 (0)00 000 00 00</a>
+    </div>
+  </div>
+</section>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">MR. SAYON</div>
+        <div class="role">groot ziende marabout-specialist</div>
+        <p style="margin-top:14px;color:var(--ink-dim);font-size:13px;line-height:1.6;max-width:36ch">
+          Vertrouwelijke consulten op afstand en in Amsterdam. 25 jaar ervaring. Geen religieuze aanpak.
+        </p>
+      </div>
+      <div>
+        <h6>Navigatie</h6>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="over.html">Mr. Sayon</a></li>
+          <li><a href="diensten.html">Diensten</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <div class="contact">
+          <a href="tel:+31000000000">+31 (0)00 000 00 00</a><br/>
+          WhatsApp 24u · 7d<br/>
+          Amsterdam · Nederland<br/>
+          Consult: <strong style="color:var(--gold)">€30</strong>
+        </div>
+      </div>
+    </div>
+    <div class="base">
+      <span>© MMXXVI · Mr. Sayon · Alle rechten voorbehouden</span>
+      <span>Alle consulten in vertrouwelijkheid · betalingsfaciliteiten mogelijk</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
