@@ -55,6 +55,7 @@
   /* ── nav ── */
   nav.top{
     position:fixed;inset:0 0 auto 0;z-index:40;
+    -webkit-backdrop-filter:blur(14px);
     backdrop-filter:blur(14px);
     background:linear-gradient(to bottom,oklch(0.08 0.02 280 / 0.85),oklch(0.08 0.02 280 / 0.55));
     border-bottom:1px solid var(--line);
@@ -933,7 +934,7 @@ function starfield(canvas, count, opts) {
     for(const s of stars) {
       const a = s.a + Math.sin(t*s.tw+s.p)*0.25;
       ctx.globalAlpha = Math.max(0, Math.min(1, a));
-      ctx.fillStyle = Math.random() > 0.995 ? 'oklch(0.82 0.12 85)' : '#f4ecd8';
+      ctx.fillStyle = Math.random() > 0.995 ? '#c9a55a' : '#f4ecd8';
       ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI*2); ctx.fill();
     }
     raf = requestAnimationFrame(tick);
